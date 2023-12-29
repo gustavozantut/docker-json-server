@@ -7,3 +7,5 @@ RUN npm install -g json-server
 COPY json-server.json json-server.json
 
 EXPOSE 80
+
+CMD [ "json-server","data/db.json" ]
